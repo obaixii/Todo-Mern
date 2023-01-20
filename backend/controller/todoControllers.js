@@ -19,7 +19,7 @@ export const getAllTodo = async (req, res, next) => {
 };
 
 // Get Single Todo Controller/Middleware/Function
-export const getTodoById = async (req, res, next) => {
+export const getTodoById = async (req, res) => {
     try {
         const { id } = req.params;
         const todo = await Todos.findById(id);
